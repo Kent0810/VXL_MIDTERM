@@ -1185,71 +1185,71 @@ void fsm_run1(){
  80008d8:	681b      	ldr	r3, [r3, #0]
  80008da:	2b01      	cmp	r3, #1
  80008dc:	d105      	bne.n	80008ea <fsm_run1+0x19e>
-					status1 = RES;
+			status1 = RES;
  80008de:	4b28      	ldr	r3, [pc, #160]	; (8000980 <fsm_run1+0x234>)
  80008e0:	2202      	movs	r2, #2
  80008e2:	601a      	str	r2, [r3, #0]
-					isButton1Clicked = 0;
+			isButton1Clicked = 0;
  80008e4:	4b27      	ldr	r3, [pc, #156]	; (8000984 <fsm_run1+0x238>)
  80008e6:	2200      	movs	r2, #0
  80008e8:	601a      	str	r2, [r3, #0]
-				}
-				if(isButton2Clicked == 1){
+		}
+		if(isButton2Clicked == 1){
  80008ea:	4b27      	ldr	r3, [pc, #156]	; (8000988 <fsm_run1+0x23c>)
  80008ec:	681b      	ldr	r3, [r3, #0]
  80008ee:	2b01      	cmp	r3, #1
  80008f0:	d105      	bne.n	80008fe <fsm_run1+0x1b2>
-					status1 = INC;
+			status1 = INC;
  80008f2:	4b23      	ldr	r3, [pc, #140]	; (8000980 <fsm_run1+0x234>)
  80008f4:	2203      	movs	r2, #3
  80008f6:	601a      	str	r2, [r3, #0]
-					isButton2Clicked = 0;
+			isButton2Clicked = 0;
  80008f8:	4b23      	ldr	r3, [pc, #140]	; (8000988 <fsm_run1+0x23c>)
  80008fa:	2200      	movs	r2, #0
  80008fc:	601a      	str	r2, [r3, #0]
-				}
-				if(isButton3Clicked == 1){
+		}
+		if(isButton3Clicked == 1){
  80008fe:	4b23      	ldr	r3, [pc, #140]	; (800098c <fsm_run1+0x240>)
  8000900:	681b      	ldr	r3, [r3, #0]
  8000902:	2b01      	cmp	r3, #1
  8000904:	d105      	bne.n	8000912 <fsm_run1+0x1c6>
-					status1 = DEC;
+			status1 = DEC;
  8000906:	4b1e      	ldr	r3, [pc, #120]	; (8000980 <fsm_run1+0x234>)
  8000908:	2204      	movs	r2, #4
  800090a:	601a      	str	r2, [r3, #0]
-					isButton3Clicked = 0;
+			isButton3Clicked = 0;
  800090c:	4b1f      	ldr	r3, [pc, #124]	; (800098c <fsm_run1+0x240>)
  800090e:	2200      	movs	r2, #0
  8000910:	601a      	str	r2, [r3, #0]
-				}
-				if(isButton2LongClicked == 1){
+		}
+		if(isButton2LongClicked == 1){
  8000912:	4b1f      	ldr	r3, [pc, #124]	; (8000990 <fsm_run1+0x244>)
  8000914:	681b      	ldr	r3, [r3, #0]
  8000916:	2b01      	cmp	r3, #1
  8000918:	d105      	bne.n	8000926 <fsm_run1+0x1da>
-					status1 = LONG_INC;
+			status1 = LONG_INC;
  800091a:	4b19      	ldr	r3, [pc, #100]	; (8000980 <fsm_run1+0x234>)
  800091c:	2205      	movs	r2, #5
  800091e:	601a      	str	r2, [r3, #0]
-					isButton2LongClicked = 0;
+			isButton2LongClicked = 0;
  8000920:	4b1b      	ldr	r3, [pc, #108]	; (8000990 <fsm_run1+0x244>)
  8000922:	2200      	movs	r2, #0
  8000924:	601a      	str	r2, [r3, #0]
-				}
-				if(isButton3LongClicked == 1){
+		}
+		if(isButton3LongClicked == 1){
  8000926:	4b1b      	ldr	r3, [pc, #108]	; (8000994 <fsm_run1+0x248>)
  8000928:	681b      	ldr	r3, [r3, #0]
  800092a:	2b01      	cmp	r3, #1
  800092c:	d105      	bne.n	800093a <fsm_run1+0x1ee>
-					status1 = LONG_DEC;
+			status1 = LONG_DEC;
  800092e:	4b14      	ldr	r3, [pc, #80]	; (8000980 <fsm_run1+0x234>)
  8000930:	2206      	movs	r2, #6
  8000932:	601a      	str	r2, [r3, #0]
-					isButton3LongClicked = 0;
+			isButton3LongClicked = 0;
  8000934:	4b17      	ldr	r3, [pc, #92]	; (8000994 <fsm_run1+0x248>)
  8000936:	2200      	movs	r2, #0
  8000938:	601a      	str	r2, [r3, #0]
-				}
+		}
 		if(timer3_flag == 1){
  800093a:	4b18      	ldr	r3, [pc, #96]	; (800099c <fsm_run1+0x250>)
  800093c:	681b      	ldr	r3, [r3, #0]

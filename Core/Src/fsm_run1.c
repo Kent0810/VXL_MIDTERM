@@ -180,25 +180,25 @@ void fsm_run1(){
 		break;
 	case COUNT_DOWN:
 		if(isButton1Clicked == 1){
-					status1 = RES;
-					isButton1Clicked = 0;
-				}
-				if(isButton2Clicked == 1){
-					status1 = INC;
-					isButton2Clicked = 0;
-				}
-				if(isButton3Clicked == 1){
-					status1 = DEC;
-					isButton3Clicked = 0;
-				}
-				if(isButton2LongClicked == 1){
-					status1 = LONG_INC;
-					isButton2LongClicked = 0;
-				}
-				if(isButton3LongClicked == 1){
-					status1 = LONG_DEC;
-					isButton3LongClicked = 0;
-				}
+			status1 = RES;
+			isButton1Clicked = 0;
+		}
+		if(isButton2Clicked == 1){
+			status1 = INC;
+			isButton2Clicked = 0;
+		}
+		if(isButton3Clicked == 1){
+			status1 = DEC;
+			isButton3Clicked = 0;
+		}
+		if(isButton2LongClicked == 1){
+			status1 = LONG_INC;
+			isButton2LongClicked = 0;
+		}
+		if(isButton3LongClicked == 1){
+			status1 = LONG_DEC;
+			isButton3LongClicked = 0;
+		}
 		if(timer3_flag == 1){
 			setTimer3(1000);
 			counter--;
